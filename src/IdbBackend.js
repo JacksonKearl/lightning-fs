@@ -1,4 +1,4 @@
-const idb = require("@isomorphic-git/idb-keyval");
+const idb = require("./idb-keyval");
 
 module.exports = class IdbBackend {
   constructor(dbname, storename) {

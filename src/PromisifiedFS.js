@@ -1,5 +1,5 @@
 const { encode, decode } = require("isomorphic-textencoder");
-const debounce = require("just-debounce-it");
+const { debounce } = require("./utils");
 
 const Stat = require("./Stat.js");
 const CacheFS = require("./CacheFS.js");

@@ -1,6 +1,8 @@
-# @isomorphic-git/lightning-fs
+# lightning-fs
 
 A lean and fast 'fs' for the browser
+
+Forked from @isomorphic-git to reduce external dependencies and add performance improvements in large filesystems.
 
 ## Motivation
 

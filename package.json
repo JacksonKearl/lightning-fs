@@ -2,8 +2,8 @@
   "publishConfig": {
     "access": "public"
   },
-  "name": "@isomorphic-git/lightning-fs",
-  "version": "0.0.0-development",
+  "name": "@jkearl/lightning-fs",
+  "version": "0.0.1",
   "description": "A lean and fast 'fs' for the browser",
   "main": "src/index.js",
   "unpkg": "dist/lightning-fs.min.js",
@@ -11,15 +11,12 @@
     "superblocktxt": "src/superblocktxt.js"
   },
   "scripts": {
-    "test": "karma start --single-run",
+    "test": "tsc && karma start --single-run",
     "build": "webpack",
     "semantic-release": "semantic-release"
   },
   "dependencies": {
-    "@isomorphic-git/idb-keyval": "3.3.2",
-    "isomorphic-textencoder": "1.0.1",
-    "just-debounce-it": "1.1.0",
-    "just-once": "1.1.0"
+    "isomorphic-textencoder": "1.0.1"
   },
   "devDependencies": {
     "karma": "2.0.5",
@@ -38,12 +35,14 @@
     "prettier": "^1.15.3",
     "puppeteer": "^1.10.0",
     "semantic-release": "16.0.3",
+    "ts-loader": "^8.0.1",
+    "typescript": "^3.9.7",
     "webpack": "^4.28.2",
     "webpack-cli": "^3.1.2"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/isomorphic-git/lightning-fs.git"
+    "url": "git+https://github.com/JacksonKearl/lightning-fs.git"
   },
   "files": [
     "**/*.js",
@@ -59,7 +58,7 @@
   "author": "William Hilton <wmhilton@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/isomorphic-git/lightning-fs/issues"
+    "url": "https://github.com/JacksonKearl/lightning-fs/issues"
   },
-  "homepage": "https://github.com/isomorphic-git/lightning-fs#readme"
+  "homepage": "https://github.com/JacksonKearl/lightning-fs#readme"
 }

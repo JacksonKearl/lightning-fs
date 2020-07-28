@@ -1,4 +1,4 @@
-const once = require("just-once");
+const { once } = require("./utils");
 
 const PromisifiedFS = require('./PromisifiedFS');
 

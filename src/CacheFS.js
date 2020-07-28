@@ -5,6 +5,7 @@ const STAT = 0;
 
 module.exports = class CacheFS {
   constructor() {
+    this._maxInode = 0
   }
   _makeRoot(root = new Map()) {
     root.set(STAT, { mode: 0o777, type: "dir", size: 0, ino: 0, mtimeMs: Date.now() });
@@ -38,16 +39,7 @@ module.exports = class CacheFS {
     return count;
   }
   autoinc () {
-    let val = this._maxInode(this._root.get("/")) + 1;
-    return val;
-  }
-  _maxInode(map) {
-    let max = map.get(STAT).ino;
-    for (let [key, val] of map) {
-      if (key === STAT) continue;
-      max = Math.max(max, this._maxInode(val));
-    }
-    return max;
+    return ++this._maxInode;
   }
   print(root = this._root.get("/")) {
     let str = "";
