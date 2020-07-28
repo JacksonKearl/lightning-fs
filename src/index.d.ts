@@ -3,7 +3,7 @@
  * which had not been merged at time of fork.
  */
 
-declare module '@isomorphic-git/lightning-fs' {
+declare module '@jkearl/lightning-fs' {
 	class FS {
 		/**
 		 * You can procrastinate initializing the FS object until later. And, if you're really adventurous, you can re-initialize it with a different name to switch between IndexedDb databases.
@@ -295,7 +295,7 @@ declare module '@isomorphic-git/lightning-fs' {
 	export default FS
 }
 
-declare module '@isomorphic-git/lightning-fs/src/path' {
+declare module '@jkearl/lightning-fs/src/path' {
 	namespace Path {
 		function join(...parts: string[]): string
 		function normalize(path: string): string
