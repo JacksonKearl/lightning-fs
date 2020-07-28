@@ -1,5 +1,5 @@
 /**
- * Originally from jakearchibald/idb-keyval under MIT License
+ * Originally from jakearchibald/idb-keyval under Apache License, Version 2.0
  * Forked to isomorphic-git/idb-keyval under MIT License
  */
 
