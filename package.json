@@ -3,7 +3,7 @@
     "access": "public"
   },
   "name": "@jkearl/lightning-fs",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A lean and fast 'fs' for the browser",
   "main": "src/index.js",
   "unpkg": "dist/lightning-fs.min.js",
@@ -44,8 +44,10 @@
     "type": "git",
     "url": "git+https://github.com/JacksonKearl/lightning-fs.git"
   },
+  "types": "src/index.d.ts",
   "files": [
     "**/*.js",
+    "src/index.d.ts",
     "!__tests__",
     "!coverage"
   ],
@@ -55,7 +57,7 @@
     "indexeddb",
     "idb"
   ],
-  "author": "William Hilton <wmhilton@gmail.com>",
+  "author": "Jackson Kearl (fork) <jakearl@microsoft.com>; William Hilton (upstream) <wmhilton@gmail.com>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/JacksonKearl/lightning-fs/issues"
